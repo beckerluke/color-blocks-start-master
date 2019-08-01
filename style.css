@@ -28,3 +28,8 @@ p {
 .yellow { 
     background: yellow; 
 }
+
+.js-paragraph-counter-container {
+    color: black; 
+    font-size: medium; 
+}
