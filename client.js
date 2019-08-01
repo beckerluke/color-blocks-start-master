@@ -18,11 +18,6 @@ function init() {
     $('.js-container').on('click', '.red', removeRedBox);
     $('.js-container').on('click', '.blue', removeBlueBox);
     $('.js-container').on('click', '.yellow', removeYellowBox);
-   
-    // $('.js-container').append(`<div class="box green"></div>`)
-    //     .append(`<div class="box blue"></div>`)
-    //     .append(`<div class="box red"</div>`)
-    //     .append(`<div class="box yellow"</div>`);
 
 }//end init function 
 
