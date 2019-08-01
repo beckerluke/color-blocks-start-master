@@ -29,7 +29,23 @@ p {
     background: yellow; 
 }
 
-.js-paragraph-counter-container {
-    color: black; 
-    font-size: medium; 
+.js-btn-red {
+    background-color: red;
+    font-weight: bold;  
+}
+
+.js-btn-yellow {
+    background-color: yellow; 
+    font-weight: bold; 
+}
+
+.js-btn-green {
+    background-color: green; 
+    font-weight: bold; 
+}
+
+.js-btn-blue {
+    background-color: blue; 
+    font-weight: bold; 
+    color: white; 
 }
