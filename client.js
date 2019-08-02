@@ -22,9 +22,20 @@ function init() {
 }//end init function 
 
 function addGreenBox() {
-    numOfGreenBoxes++; 
-    $('.js-greenBlock-counter').text('Green Box Count: ' + numOfGreenBoxes); 
-    $('.js-container').append(`<div class="box green"></div>`);   
+    let element = $('.js-input-green').val(); 
+    if (element == "") {
+        element = 1; 
+        numOfGreenBoxes++;  
+    } else { 
+        element = parseInt(element); 
+        numOfGreenBoxes = numOfGreenBoxes + element;
+    }
+    console.log(element); 
+
+    $('.js-greenBlock-counter').text('Green Box Count: ' + numOfGreenBoxes);
+    for(let i = 0; i < element; i++) {
+    $('.js-container').append(`<div class="box green"></div>`); 
+    }
 }//end addGreenBox function 
 
 function addBlueBox() {
@@ -49,22 +60,22 @@ function removeGreenBox() {
     numOfGreenBoxes--; 
     $(this).remove();  
     $('.js-greenBlock-counter').text('Green Box Count: ' + numOfGreenBoxes);
-}
+}// end removeGreenBox function 
 
 function removeBlueBox() {
     numOfBlueBoxes--; 
     $(this).remove();  
     $('.js-blueBlock-counter').text('Blue Box Count: ' + numOfBlueBoxes);
-}
+}//end removeBlueBox function 
 
 function removeRedBox() {
     numOfRedBoxes--; 
     $(this).remove();  
     $('.js-redBlock-counter').text('Red Box Count: ' + numOfRedBoxes);
-}
+}//end removeRedBox function 
 
 function removeYellowBox() {
     numOfYellowBoxes--; 
     $(this).remove();  
     $('.js-yellowBlock-counter').text('Yellow Box Count: ' + numOfYellowBoxes);
-}
+}//end removeYellowBox function 
