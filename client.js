@@ -29,31 +29,60 @@ function addGreenBox() {
     } else { 
         element = parseInt(element); 
         numOfGreenBoxes = numOfGreenBoxes + element;
-    }
-    console.log(element); 
+    } 
 
     $('.js-greenBlock-counter').text('Green Box Count: ' + numOfGreenBoxes);
     for(let i = 0; i < element; i++) {
-    $('.js-container').append(`<div class="box green"></div>`); 
+        $('.js-container').append(`<div class="box green"></div>`); 
     }
 }//end addGreenBox function 
 
 function addBlueBox() {
-    numOfBlueBoxes++; 
-    $('.js-blueBlock-counter').text('Blue Box Count: ' + numOfBlueBoxes); 
-    $('.js-container').append(`<div class="box blue"></div>`); 
+    let element = $('.js-input-blue').val(); 
+    if (element == "") {
+        element = 1; 
+        numOfBlueBoxes++;  
+    } else { 
+        element = parseInt(element); 
+        numOfBlueBoxes = numOfBlueBoxes + element;
+    } 
+
+    $('.js-blueBlock-counter').text('Blue Box Count: ' + numOfBlueBoxes);
+    for(let i = 0; i < element; i++) {
+        $('.js-container').append(`<div class="box blue"></div>`); 
+    }
 }//end addBlueBox function
 
 function addRedBox() { 
-    numOfRedBoxes++;
-    $('.js-redBlock-counter').text('Red Box Count: ' + numOfRedBoxes); 
-    $('.js-container').append(`<div class="box red"></div>`); 
+    let element = $('.js-input-red').val(); 
+    if (element == "") {
+        element = 1; 
+        numOfRedBoxes++;  
+    } else { 
+        element = parseInt(element); 
+        numOfRedBoxes = numOfRedBoxes + element;
+    } 
+
+    $('.js-redBlock-counter').text('Red Box Count: ' + numOfRedBoxes);
+    for(let i = 0; i < element; i++) {
+        $('.js-container').append(`<div class="box red"></div>`); 
+    }
 }//end addRedBox function
 
 function addYellowBox() {
-    numOfYellowBoxes++;
-    $('.js-yellowBlock-counter').text('Yellow Box Count: ' + numOfYellowBoxes);  
-    $('.js-container').append(`<div class="box yellow"></div>`); 
+    let element = $('.js-input-yellow').val(); 
+    if (element == "") {
+        element = 1; 
+        numOfYellowBoxes++;  
+    } else { 
+        element = parseInt(element); 
+        numOfYellowBoxes = numOfYellowBoxes + element;
+    } 
+
+    $('.js-yellowBlock-counter').text('Yellow Box Count: ' + numOfYellowBoxes);
+    for(let i = 0; i < element; i++) {
+        $('.js-container').append(`<div class="box yellow"></div>`); 
+    }
 } //end addYellowBox function 
 
 function removeGreenBox() { 
