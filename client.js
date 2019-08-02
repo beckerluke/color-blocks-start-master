@@ -6,8 +6,6 @@ let numOfYellowBoxes = 0;
 $(document).ready(init);
 
 function init() {
-    
-    const colorBlocks= ['green', 'blue', 'red', 'yellow']; 
 
     $('.js-btn-green').on('click', addGreenBox);
     $('.js-btn-blue').on('click', addBlueBox);
